@@ -1,0 +1,27 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'headers';
+
+$blue: #0E0EFF;
+$font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+
+//styled the top header different from the partial headers to contrast them
+#topheader{
+	color: pink;
+
+}
+
+
+//this is hte kind of comment that must be used;
+.tophalf{
+	font-family: $font;
+	background-color: $blue;
+	color: yellow;
+}
+.bottomhalf{
+	@extend .tophalf;
+	
+}
